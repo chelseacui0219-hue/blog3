@@ -1,0 +1,210 @@
+---
+title: "Who Benefits Most from a College Degree?"
+date: 2026-09-22
+Author: Yuzhuo Cui
+---
+
+## Introduction
+
+Is a college degree still worth it? It is a debated
+questions in American economic life.
+
+This analysis uses microdata from the **IPUMS Current Population
+Survey (CPS)** to measure the college wage premium — the
+percentage difference in median annual earnings between
+bachelor's degree holders and high school graduates — from
+2002 to 2025.
+
+The headline result: **the premium is large (around 70%) and
+stable**, but it is experienced very differently by different
+groups. Young workers face more volatility. Women now enjoy
+a larger and faster-growing premium than men. Understanding
+these differences matters for anyone making decisions about
+education, careers, or policy.
+
+## How I Measured It
+
+I used the Annual Social and Economic Supplement (ASEC) of the
+CPS, which contains detailed annual income data for a
+representative sample of the U.S. population.
+
+To make the analysis representative, I used the **ASECWT
+sampling weight** provided by IPUMS. 
+
+I restricted the sample to:
+- Adults aged 25–64 (prime working age)
+- Workers with positive earnings and hours worked
+- High school graduates (`EDUC = 73`) and bachelor's degree
+  holders (`EDUC = 111`)
+
+All earnings are adjusted to **2010 dollars** using the CPI-U,
+so comparisons across years are not distorted by inflation.
+
+The college premium is defined as:
+
+```
+Premium = (Median earnings of bachelor's graduates
+         / Median earnings of high school graduates) - 1
+```
+
+## Finding 1: The Premium is in V-shaped trend
+
+![The College Wage Premium, 2002–2025](premium_overall.png){width=90%}
+
+The college premium rose from **60% in 2002** to **73% in 2015**,
+then fell to **66.7% in 2022**. After 2022, it rebounded to **70.5% in 2025**. 
+
+This V-shaped pattern suggests that the premium is being driven
+by the **shocks to the labor market** — particularly
+shocks that hit workers without a degree. 
+
+When low-wage jobs disappear during a recession, high school
+graduates' median earnings fall, and the *ratio* that defines
+the premium mechanically rises. When those jobs recover, the
+premium falls back.
+
+## Finding 2: The Volatility comes from high school graduates
+
+
+![Median Earnings by Education and Age Group](premium_by_age.png){width=90%}
+
+
+To understand where the V-shape comes from, I split the sample
+into four age groups and plotted median earnings separately for
+bachelor's and high school graduates.
+
+The result is revealing. **Bachelor's degree holders across all four age groups have remarkably stable earnings.** The blue lines in each graph move by less than 10% over 23 years, even during the financial crisis and the pandemic.
+
+The high school lines (red) are a different story. Their earnings
+are more volatile, and the volatility is largest for older
+workers:
+
+- **55–64 group**: high school earnings fell from about $31,000
+  in 2002 to a low of about $29,000 around 2010, then recovered
+  to roughly $33,000 by 2020, before falling back to $32,500
+  by 2025.
+- **45–54 group**: similar pattern, with a decline around 2010
+  and another dip after 2020.
+- **25–34 and 35–44 groups**: more stable, with only modest
+  year-to-year movement.
+
+The college premium is a **ratio**: bachelor's earnings divided
+by high school earnings. If bachelor's earnings are stable and
+high school earnings fluctuate, then **the entire movement in
+the premium comes from the denominator**.
+
+This changes how we should read the V-shape in Figure 1.
+The premium did not rise because college became more valuable
+in 2015. It rose because **high school graduates' earnings were
+unusually low** that year. And when their earnings recovered
+after 2022, the premium fell back.
+
+## Finding 3: A Persistent and Growing Gender Gap in Returns
+
+![The College Premium by Gender, 2002–2025](premium_by_sex.png){width=90%}
+
+The final dimension I examined is gender, and here the pattern
+is the most striking of all.
+
+**Women's college premium has been higher than men's for almost the entire period, and the gap has widened over time.**
+
+In 2002, the premium was 72.5% for women and 66.7% for men — a
+6-point difference. By 2025, the gap had grown to more than
+10 points: **85.7% for women, 75.0% for men**.
+
+The paths are also different:
+
+- **Women's premium** rose steadily from 72.5% in 2002 to 85.7%
+  in 2025 — the most consistent upward trend in the entire
+  analysis.
+- **Men's premium** was far more volatile. It started at 66.7%,
+  briefly fell to 64.8% in 2007, then surged to 80.5% by 2015 —
+  briefly overtaking women — before falling back to 75% by 2025.
+
+The pattern is consistent with two well-documented trends in
+the U.S. labor market:
+
+1. **Women have been outpacing men in educational attainment**
+   for decades. As more women earn college degrees, the
+   composition of the female college workforce changes, which
+   affects measured earnings.
+
+2. **Male high school graduates have seen their earnings decline**, 
+   particularly in manufacturing and other
+   traditionally male-dominated industries. Female high school
+   graduates' earnings have been more stable (though also low,
+   around $24,000 for most of the period).
+
+Together, these trends mean that **the college premium has
+become a larger advantage for women than for men** — not
+necessarily because women's college earnings are higher, but
+because men's alternatives have gotten worse.
+
+This is an important nuance. A high college premium sounds like
+good news, but for men it partly reflects the declining
+fortunes of workers without a degree.
+
+
+## What This Means
+
+For students deciding whether to attend college, the data
+suggests the answer is still clearly yes: **the financial
+return is large, stable, and durable.**
+
+But for policymakers, the picture is more complicated:
+
+1. **The premium is not growing steadily** the way it did in the
+   1980s and 1990s. The post-2015 plateau is real.
+2. **Old workers face more volatility** than younger
+   generation.
+3. **The gender gap in returns has widened.** Women's premium
+   rose steadily while men's fluctuated and
+   ended lower than where it started. This reflects the
+   declining fortunes of male high school graduates more than
+   it reflects gains for female college graduates.
+
+The college premium is not a policy lever. It is a measurement
+of how much the labor market values a degree. Right now, that
+value is high — but its trajectory, and who benefits from it
+most, is not uniform.
+
+## Limitations
+
+This analysis has several limitations:
+
+- **Descriptive, not causal.** The premium measures the
+  correlation between education and earnings. It does not
+  prove that college *causes* higher earnings, since college
+  graduates differ from non-graduates in many ways.
+- **Median-based.** The premium measures the middle of the
+  distribution, not the full range.
+- **Binary comparison.** Only high school and bachelor's
+  degree holders are compared. Associate's and graduate
+  degrees are excluded.
+- **Selected years.** The analysis uses 7 ASEC years, not
+  every year from 2002–2025.
+
+These limitations do not undermine the headline findings —
+the premium is large, stable, and heterogeneous — but they
+are important context.
+
+## Conclusion
+
+The college wage premium has been one of the most important
+features of the U.S. labor market for decades. This analysis
+shows that it remains large (around 70%),  and is experienced very differently
+by different groups.
+
+The most useful takeaway for a reader is this: **the return
+to college is high, but it is not uniform.** Old workers
+face more risk. Women now earn a larger premium than men.
+Understanding why is the first step toward better decisions
+about education, careers, and policy.
+
+---
+
+*Data source: [IPUMS CPS](https://cps.ipums.org/), Annual
+Social and Economic Supplement, 2002–2025. All statistics are
+weighted using `ASECWT`. Earnings are adjusted to 2010 dollars
+using CPI-U. Full code and data are available in the
+[project repository](https://github.com/你的用户名/blog3).*
