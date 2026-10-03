@@ -7,9 +7,9 @@ Author: Yuzhuo Cui
 ## Introduction
 
 Is a college degree still worth it? It is a debated
-questions in American economic life.
+questions especially facing the varying market conditions and rapidly evolving industries. 
 
-This analysis uses microdata from the **IPUMS Current Population
+This analysis uses microeconomic data from the **IPUMS Current Population
 Survey (CPS)** to measure the college wage premium — the
 percentage difference in median annual earnings between
 bachelor's degree holders and high school graduates — from
@@ -46,6 +46,11 @@ The college premium is defined as:
 Premium = (Median earnings of bachelor's graduates
          / Median earnings of high school graduates) - 1
 ```
+This research use **median** rather than mean earnings due to the strong right-skewed characteristic of earnings. A small number of
+very high earners pull the mean far above the typical worker.
+The median is less affected by those
+extreme values, so it better represents what a typical
+high school or college graduate earns.
 
 ## Finding 1: The Premium is in V-shaped trend
 
@@ -54,14 +59,15 @@ Premium = (Median earnings of bachelor's graduates
 The college premium rose from **60% in 2002** to **73% in 2015**,
 then fell to **66.7% in 2022**. After 2022, it rebounded to **70.5% in 2025**. 
 
-This V-shaped pattern suggests that the premium is being driven
-by the **shocks to the labor market** — particularly
+One possible reason for the increasing trend before 2015 is that the premium is being drivenby the **shocks to the labor market** — particularly
 shocks that hit workers without a degree. 
 
 When low-wage jobs disappear during a recession, high school
 graduates' median earnings fall, and the *ratio* that defines
 the premium mechanically rises. When those jobs recover, the
 premium falls back.
+
+While the decreasing trend happened in the COVID period is another case. During the pandemic, high-paying white-collar positions are also facing the impact of layoffs and remote work. The relative demand for university graduates might weaken around 2022.
 
 ## Finding 2: The Volatility comes from high school graduates
 
@@ -90,14 +96,11 @@ workers:
 
 The college premium is a **ratio**: bachelor's earnings divided
 by high school earnings. If bachelor's earnings are stable and
-high school earnings fluctuate, then **the entire movement in
+high school earnings fluctuate, then **the most of the movement in
 the premium comes from the denominator**.
 
-This changes how we should read the V-shape in Figure 1.
-The premium did not rise because college became more valuable
-in 2015. It rose because **high school graduates' earnings were
-unusually low** that year. And when their earnings recovered
-after 2022, the premium fell back.
+In this case, the premium in figure 1 did not rise because college became more valuable. It rose because **high school graduates' earnings were
+unusually low** that period.
 
 ## Finding 3: A Persistent and Growing Gender Gap in Returns
 
@@ -106,7 +109,8 @@ after 2022, the premium fell back.
 The final dimension I examined is gender, and here the pattern
 is the most striking of all.
 
-**Women's college premium has been higher than men's for almost the entire period, and the gap has widened over time.**
+**Women's college premium has been higher than men's for almost the entire period, and the gap has widened over time.** What should be noticed is that a higher premium does not mean that the absolute wage of women with degrees is more than that of men with degrees. It simply means the gap between
+degree holders and non-degree holders is larger for women.
 
 In 2002, the premium was 72.5% for women and 66.7% for men — a
 6-point difference. By 2025, the gap had grown to more than
@@ -137,36 +141,24 @@ the U.S. labor market:
 
 Together, these trends mean that **the college premium has
 become a larger advantage for women than for men** — not
-necessarily because women's college earnings are higher, but
-because men's alternatives have gotten worse.
-
-This is an important nuance. A high college premium sounds like
-good news, but for men it partly reflects the declining
-fortunes of workers without a degree.
+necessarily because women's college earnings are increasing, but
+because men's alternatives have gotten worse. This partly reflects the declining fortunes of male workers without a degree.
 
 
-## What This Means
+## Conclusion
 
-For students deciding whether to attend college, the data
-suggests the answer is still clearly yes: **the financial
-return is large, stable, and durable.**
+The college wage premium remains one of the most important
+features of the U.S. labor market. This analysis shows it is
+large (around 70%) and experienced very differently across
+groups:
 
-But for policymakers, the picture is more complicated:
+1. **The premium is not growing steadily** since 2015 — it fell through 2022 and partially recovered by 2025. 
+2. **Old workers (55-64) face more volatility** than younger
+   generation among workers without a degree.
+3. **The gender gap in the college premium has widened.** women's premium rose steadily to 85.7% by 2025, while
+men's was more volatile and reached 75.0%. 
 
-1. **The premium is not growing steadily** the way it did in the
-   1980s and 1990s. The post-2015 plateau is real.
-2. **Old workers face more volatility** than younger
-   generation.
-3. **The gender gap in returns has widened.** Women's premium
-   rose steadily while men's fluctuated and
-   ended lower than where it started. This reflects the
-   declining fortunes of male high school graduates more than
-   it reflects gains for female college graduates.
 
-The college premium is not a policy lever. It is a measurement
-of how much the labor market values a degree. Right now, that
-value is high — but its trajectory, and who benefits from it
-most, is not uniform.
 
 ## Limitations
 
@@ -184,22 +176,6 @@ This analysis has several limitations:
 - **Selected years.** The analysis uses 7 ASEC years, not
   every year from 2002–2025.
 
-These limitations do not undermine the headline findings —
-the premium is large, stable, and heterogeneous — but they
-are important context.
-
-## Conclusion
-
-The college wage premium has been one of the most important
-features of the U.S. labor market for decades. This analysis
-shows that it remains large (around 70%),  and is experienced very differently
-by different groups.
-
-The most useful takeaway for a reader is this: **the return
-to college is high, but it is not uniform.** Old workers
-face more risk. Women now earn a larger premium than men.
-Understanding why is the first step toward better decisions
-about education, careers, and policy.
 
 ---
 
@@ -207,4 +183,4 @@ about education, careers, and policy.
 Social and Economic Supplement, 2002–2025. All statistics are
 weighted using `ASECWT`. Earnings are adjusted to 2010 dollars
 using CPI-U. Full code and data are available in the
-[project repository](https://github.com/你的用户名/blog3).*
+[project repository](https://github.com/chelseacui0219-hue/blog3).*

@@ -67,15 +67,16 @@ blog3/
 
 ## Key Findings
 
-1. **The premium is not growing steadily** the way it did in the
-   1980s and 1990s. The post-2015 plateau is real.
-2. **Old workers face more volatility** than younger
-   generation.
-3. **The gender gap in returns has widened.** Women's premium
-   rose steadily while men's fluctuated and
-   ended lower than where it started. This reflects the
-   declining fortunes of male high school graduates more than
-   it reflects gains for female college graduates.
+The college wage premium remains one of the most important
+features of the U.S. labor market. This analysis shows it is
+large (around 70%) and experienced very differently across
+groups:
+
+1. **The premium is not growing steadily** since 2015 — it fell through 2022 and partially recovered by 2025. 
+2. **Old workers (55-64) face more volatility** than younger
+   generation among workers without a degree.
+3. **The gender gap in the college premium has widened.** women's premium rose steadily to 85.7% by 2025, while
+men's was more volatile and reached 75.0%. 
 
 ## Methodology
 
